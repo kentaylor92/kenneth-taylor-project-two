@@ -1,0 +1,169 @@
+
+// TODO: MAKE FONTS SCALEABLE (REM + VW);
+
+.main {
+
+    main p {
+        margin: 40px 0;
+    }
+    
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    // WHO IS WILLOW
+    .who-is-willow {
+        padding: 80px 0 ;
+        text-align: center;
+        // background-color: $white;
+    }
+
+    // FAVOURITE THINGS / BUCKET LIST
+
+    .row1,
+    .row2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .row1 {
+        margin-bottom: 40px;
+    }
+
+    .photo-text-flex {
+        width: 50%;
+    }
+
+    .favourite-things {
+        padding: 4% 0 0 7%;
+        text-align: left;
+
+        p {
+            margin-top: 34px;
+        }
+    }
+
+    .bucket-list {  
+        text-align: right;
+        padding: 0 8% 0 0;
+        position: relative;
+        top: -41px;
+        
+    }
+
+    .photo-offset1,
+    .photo-offset2 {
+        width: 50%;
+    }
+
+    .photo-offset1 {
+        position: relative;
+        bottom: 40px;
+        box-shadow: -140px 20px  $green, 20px 20px $green;     
+    }
+
+    .photo-offset2 {
+        position: relative;
+        top: 15px;
+        box-shadow: 140px 15px $green, 15px 15px $green;
+    }
+
+    // WILLOW'S JOURNEY
+
+    .willows-journey {
+
+        p {
+            margin-top: 20px;
+        }
+        .wrapper {
+           @include flex-row;
+            padding: 80px 0 ;
+
+        }
+
+        .journey-image {
+            width: 25%;
+            // min-width: 250px;
+            box-shadow: 20px 20px $green;
+            
+        }
+
+        .journey-text-container {
+            width: 70%;
+            padding-left: 80px;
+            
+        }
+    }
+
+    // GALLERY
+
+    
+
+    .gallery ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gallery img {
+        padding: 80px 20px;
+    }
+
+    // LINKS
+
+    .links-flex {
+        padding: 80px 0 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+            width:   50%;
+            display: flex;
+            // flex-direction: column;
+        }
+
+        .icon {
+            width: 10%;    
+            height: 40px;
+            width: 50px;        
+        }
+
+        i {
+            font-size: 2rem;
+            background: $yellow;
+            padding: 10px 12px;
+            border-radius: 100%;  
+        }
+
+        .icon-text {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin-left: 20px;
+            
+        }
+
+        .icon-text p {
+            margin-top: 20px;
+        }
+    }
+  
+}
+
+// FOOTER
+
+    footer {
+    background-color: $black;
+    
+    
+        small p {
+            color: $white;
+            text-align: center;
+            padding: 5px 0;
+        }
+    }

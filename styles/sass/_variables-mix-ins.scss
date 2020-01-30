@@ -1,0 +1,79 @@
+
+// VARIABLES
+// VARIABLES
+// VARIABLES
+
+// Colours
+$dark-green: #345231;
+$green: #709B6B;
+$yellow: #E4A436;
+$black: #1F1F1F;
+$white: #F6F6F6;
+
+// Fonts
+$fancy-font: 'Abril Fatface', cursive;
+$body-font: 'Montserrat', sans-serif;
+
+
+
+// MIX INS
+// MIX INS
+// MIX INS
+
+
+// Font-Size
+@mixin font-size($sizeValue){
+	font-size: $sizeValue * 1px;
+	font-size: ($sizeValue/10) * 1rem;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin yellow-button {
+    background-color: $yellow;
+    font-family: $fancy-font;
+    color: $black;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    @include uppercase;
+    padding: 10px 20px;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: row;
+    align-items: center;
+}
+
+@mixin white-background {
+    background-color: $white;
+}
+
+// Media Query - Mix Ins
+
+// Mobile
+@mixin mediaForMobile {
+    @media (max-width: 480px) {@content;}
+}
+
+// Tablet
+@mixin mediaForTablet {
+    @media (max-width: 768px) {@content;} 
+}
+
+// Desktop - Small
+@mixin mediaForDesktopSmall {
+    @media (max-width: 920px) {@content;}
+}
+
+// Desktop - Large
+@mixin mediaforDesktopLarge {
+    @media (min-width: 921px) {@content;}
+}
+
+
+
+

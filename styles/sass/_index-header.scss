@@ -1,0 +1,58 @@
+
+.main {
+    header {
+        background-color: $dark-green;
+      
+    
+        .hero {
+            @include flex-row;
+            justify-content: space-between;
+            
+            
+    
+            .hero-image {
+                // margin-right: 40px;
+               width: 35%;
+               min-width: 350px;
+               position: relative;
+               right: 50px;
+               top: 40px;
+               box-shadow: 15px 15px  white;
+            }
+        }
+    
+        // .hero-text {  
+        //     max-width: 35%;       
+        // }   
+
+        h1 {
+            font-size: 14rem;
+            // @include font-size(130);
+            @include uppercase;
+            // margin-right: 30px;
+            position: relative;
+            
+
+            &:before {
+                content: "";
+                background-image: url(../assets/circle-text.png);
+                background-repeat: no-repeat;
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+                position: absolute;
+                top: -30px;
+                left: -60px;
+            }
+        }
+
+        .hero-text img {
+            position: relative;
+            left: 80px;
+            bottom: 20px;
+            min-width: 350px;
+        }
+    }
+}
+
+

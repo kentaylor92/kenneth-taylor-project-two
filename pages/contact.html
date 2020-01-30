@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/4d199f08bf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Contact</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <h2>Willow</h2>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav> <!-- end nav-->
+        <div class="wrapper">
+            <h1>Contact Me</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="contact-info">
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div> <!-- end social icons-->
+                <p>info@email.com</p>
+                <div>
+                    <ul>
+                        <li><p>123 - 456 - 7890</p></li>
+                        <li><p>123 Queen Street West, Unit 10</p></li>
+                        <li><p>Toronto, Ontario</p></li>
+                        <li><p>m5v2d5</p></li> <!--TODO: ALL CAPS -->
+                    </ul>
+                </div>
+            </div>
+
+            <form action="" class="form">
+                <!-- Make sure this is accessible via TAB -->
+                <label for="name" class="sr-only">Your Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+            
+                <label for="email" class="sr-only">Enter your email</label>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <!-- TODO: remove corner styling on textarea!!!!! -->
+                <textarea name="user-comment" cols="80" rows="20" placeholder="Message"></textarea>
+            
+                <button>Submit</button>
+            </form>
+        </div>
+
+        <footer>
+            <small>
+                <p>Copyright &copy; 2020 Juno</p>
+            </small>
+        </footer>
+
+
+    </main>
+    
+</body>
+</html>

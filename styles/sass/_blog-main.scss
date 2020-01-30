@@ -1,0 +1,59 @@
+.blog-body {
+    main {
+        background-color: $white;
+    }
+
+     .blog-full {
+        @include flex-row;
+        align-items: flex-start;
+        padding-top: 80px;
+        
+
+        aside {
+            width: calc(30% - 20px);
+            margin-right: 20px;
+
+            div {
+                padding: 30px;
+                margin: 30px auto;
+                background-color: white;
+            }
+
+            h3 {
+                font-size: 2rem;
+                margin: 20px 0;
+            }
+
+            span {
+                color: $green;
+                font-weight: 700;
+            }
+
+            .related-links ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 10px;
+                
+
+            }
+            
+            .related-links li {
+                list-style-type: disc;
+                padding-left: 10px;
+            }
+
+            .related-links p {
+                // font-size: 1.5rem;
+            }
+            
+        }
+
+        .blog-posts {
+            width: calc(70% - 20px);
+            margin-left: 20px;
+        }
+    }
+}

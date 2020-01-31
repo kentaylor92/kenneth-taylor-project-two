@@ -98,52 +98,52 @@
             width: 85%;
         }
 
-        form {
-            @include flex-row;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 30px 0;
-        }
+        // form {
+        //     @include flex-row;
+        //     flex-direction: column;
+        //     align-items: flex-start;
+        //     margin: 30px 0;
+        // }
 
-        .form-inputs {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
+        // .form-inputs {
+        //     width: 100%;
+        //     display: flex;
+        //     justify-content: space-between;
+        // }
 
-        input[type="text"],
-        input[type="email"] {
-               width: 49.5%; 
-               height: 70px;
-        }
+        // input[type="text"],
+        // input[type="email"] {
+        //        width: 49.5%; 
+        //        height: 70px;
+        // }
 
-        button {
-            width: 100%;
-            margin-top: 10px;
+        // button {
+        //     width: 100%;
+        //     margin-top: 10px;
             
-        }
+        // }
 
-        input[type="text"],
-        input[type="email"],
-        textarea,
-        button {
-            border: none;
-        }
+        // input[type="text"],
+        // input[type="email"],
+        // textarea,
+        // button {
+        //     border: none;
+        // }
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            text-indent: 30px;
-            font-size: 1.8rem;
-            font-family: $body-font;
-        }
+        // input[type="text"],
+        // input[type="email"],
+        // textarea {
+        //     text-indent: 30px;
+        //     font-size: 1.8rem;
+        //     font-family: $body-font;
+        // }
 
-        textarea {
-            width: 100%;
-            margin-top: 15px;
-            resize: none;
-            padding-top: 30px;
-        }
+        // textarea {
+        //     width: 100%;
+        //     margin-top: 15px;
+        //     resize: none;
+        //     padding-top: 30px;
+        // }
 
     }
 }

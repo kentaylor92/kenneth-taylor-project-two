@@ -55,24 +55,24 @@ $body-font: 'Montserrat', sans-serif;
 // Media Query - Mix Ins
 
 // Mobile
-@mixin mediaForMobile {
-    @media (max-width: 480px) {@content;}
-}
+// @mixin mediaForMobile {
+//     @media (max-width: 480px) {@content;}
+// }
 
-// Tablet
-@mixin mediaForTablet {
-    @media (max-width: 768px) {@content;} 
-}
+// // Tablet
+// @mixin mediaForTablet {
+//     @media (max-width: 768px) {@content;} 
+// }
 
-// Desktop - Small
-@mixin mediaForDesktopSmall {
-    @media (max-width: 920px) {@content;}
-}
+// // Desktop - Small
+// @mixin mediaForDesktopSmall {
+//     @media (max-width: 920px) {@content;}
+// }
 
-// Desktop - Large
-@mixin mediaforDesktopLarge {
-    @media (min-width: 921px) {@content;}
-}
+// // Desktop - Large
+// @mixin mediaforDesktopLarge {
+//     @media (min-width: 921px) {@content;}
+// }
 
 
 

@@ -265,7 +265,7 @@ p {
   font-family: "Montserrat", sans-serif;
   line-height: 30px;
   color: #1F1F1F;
-  font-size: calc(0.4rem + 1vw);
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
@@ -359,6 +359,12 @@ img {
   background-color: #F6F6F6;
 }
 
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
 .main header {
   background-color: #345231;
 }
@@ -382,18 +388,18 @@ img {
           justify-content: space-between;
 }
 
-.main header .hero .hero-image {
+.main header .hero-image {
   width: 35%;
-  min-width: 350px;
+  min-width: 275px;
   position: relative;
-  right: 50px;
   top: 40px;
   -webkit-box-shadow: 15px 15px  white;
           box-shadow: 15px 15px  white;
 }
 
 .main header h1 {
-  font-size: 14rem;
+  font-size: 15rem;
+  margin-left: 40px;
   text-transform: uppercase;
   position: relative;
 }
@@ -406,15 +412,64 @@ img {
   height: 200px;
   display: inline-block;
   position: absolute;
-  top: -30px;
+  top: -10px;
   left: -60px;
 }
 
-.main header .hero-text img {
-  position: relative;
-  left: 80px;
-  bottom: 20px;
-  min-width: 350px;
+@media (max-width: 1120px) {
+  .main header h1 {
+    font-size: 12rem;
+    margin-left: 0;
+  }
+  .main header h1:before {
+    width: 200px;
+    height: 200px;
+    top: -20px;
+    left: -40px;
+  }
+}
+
+@media (max-width: 920px) {
+  .main header h1 {
+    font-size: 9rem;
+    margin-left: 0;
+  }
+  .main header h1:before {
+    width: 175px;
+    height: 175px;
+    top: -35px;
+    left: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main header .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main header h1 {
+    font-size: 7rem;
+    margin-bottom: 40px;
+  }
+  .main header h1:before {
+    top: -45px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main header h1 {
+    font-size: 5rem;
+    margin-top: 20px;
+  }
+  .main header h1:before {
+    top: -50px;
+  }
 }
 
 .main main p {
@@ -592,6 +647,91 @@ footer small p {
   color: #F6F6F6;
   text-align: center;
   padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .main .photo-text-content .wrapper {
+    width: 95%;
+  }
+  .main .row1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .main .row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main .photo-text-flex {
+    width: 100%;
+  }
+  .main .photo-offset1,
+  .main .photo-offset2 {
+    width: 68%;
+  }
+  .main .photo-offset2 {
+    margin-bottom: 120px;
+  }
+  .main .willows-journey .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .willows-journey .journey-image {
+    width: 55%;
+    margin-bottom: 30px;
+  }
+  .main .willows-journey .journey-text-container {
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+  }
+  .main .gallery .wrapper {
+    width: 100%;
+  }
+  .main .gallery img {
+    padding: 0px;
+  }
+  .main .links-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .links-flex div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main .banner-image {
+    display: none;
+  }
+  .main .photo-offset1,
+  .main .photo-offset2 {
+    width: 85%;
+  }
+  .main .gallery .wrapper {
+    width: 80%;
+  }
+  .main .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .gallery li:nth-last-of-type(2) {
+    margin: 10px 0;
+  }
+  .main .willows-journey .journey-image {
+    width: 75%;
+    margin-bottom: 50px;
+  }
 }
 
 .blog-body header {

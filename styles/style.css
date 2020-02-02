@@ -235,6 +235,20 @@ html {
   overflow: hidden;
 }
 
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
 body,
 h1,
 h2,
@@ -345,7 +359,7 @@ img {
   width: 100%;
 }
 
-.yellow-link {
+.primary-link {
   background-color: #E4A436;
   font-family: "Abril Fatface", cursive;
   color: #1F1F1F;
@@ -353,14 +367,26 @@ img {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   padding: 10px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.background-wh {
+.primary-link:hover,
+.primary-link:focus {
+  -webkit-box-shadow: 5px 5px 0 #1F1F1F;
+          box-shadow: 5px 5px 0 #1F1F1F;
+}
+
+.on-link {
+  color: #E4A436;
+}
+
+.alt-background {
   background-color: #F6F6F6;
 }
 
 @media (max-width: 768px) {
-  nav {
+  nav ul li {
     display: none;
   }
 }
@@ -758,6 +784,12 @@ footer small p {
   font-size: 6rem;
   position: relative;
   bottom: -13px;
+}
+
+@media (max-width: 768px) {
+  ul li:nth-of-type(3) {
+    display: block;
+  }
 }
 
 .blog-body main {

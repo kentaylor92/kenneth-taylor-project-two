@@ -1,6 +1,5 @@
 
-// VARIABLES
-// VARIABLES
+
 // VARIABLES
 
 // Colours
@@ -14,11 +13,11 @@ $white: #F6F6F6;
 $fancy-font: 'Abril Fatface', cursive;
 $body-font: 'Montserrat', sans-serif;
 
-
-
 // MIX INS
-// MIX INS
-// MIX INS
+@mixin font-size($sizeValue){
+	font-size: $sizeValue * 1px;
+	font-size: ($sizeValue/10) * 1rem;
+}
 
 @mixin flex-row {
     display: flex;

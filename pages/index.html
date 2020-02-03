@@ -10,10 +10,15 @@
     <title>Willow</title>
 </head>
 <body class="main">
-    
+ 
     <header class="header-green">
+        <div id="skip" class="skip">
+            <a href="#main-content">Skip to main content</a>
+        </div>
         <div class="wrapper">
             <nav>
+                <label for="toggle" aria-label="click here to toggle menu">&#9776</label>
+                <input type="checkbox" id="toggle">
                 <ul>
                     <li><a href="index.html" class="on-link">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -22,19 +27,18 @@
                     <li><a href="contact.html">Contact</a></li>              
                 </ul>
             </nav> <!-- end nav-->
-            
             <div class="hero"> <!--start hero-->
                 <div class="hero-text">
                     <h1>Willow</h1>
                 </div>
                 <div class="hero-image">
-                    <img src="../assets/home-image-1-cropped.jpg" alt="A woman wearing a yellow coat poses amongst some green foliage">
+                    <img src="../assets/home-image-1.jpg" alt="A woman wearing a yellow coat poses amongst some green foliage">
                 </div>
             </div> 
         </div> <!-- end wrapper-->
     </header> <!--end of header-->
 
-    <main>
+    <main id="main-content">
         <section class="who-is-willow alt-background" id="about">
             <div class="wrapper">
                 <h2>Who's Willow?</h2>
@@ -94,10 +98,7 @@
                     <li><img src="../assets/home-image-7.jpg" alt="A bowl of lemons sits next to a plate of sliced lemons."></li>
                     <li><img src="../assets/home-image-8.jpg"
                         alt="A very modern looking staircase, with a two-tiered railing, marble floors and a patterned wallpaper. "></li>
-                </ul>
-                
-                
-                
+                </ul>              
             </div>
         </section>
         

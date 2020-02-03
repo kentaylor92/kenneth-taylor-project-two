@@ -1,6 +1,6 @@
 .blog-body {
     main {
-        background-color: black;
+        background-color: $white;
     }
 
      .blog-full {
@@ -8,7 +8,6 @@
         align-items: flex-start;
         padding-top: 60px;
         
-
         aside {
             width: calc(30% - 20px);
             margin-right: 20px;
@@ -36,15 +35,24 @@
                 align-items: flex-start;
                 flex-direction: column;
                 padding: 10px;
-                
-
             }
             
             .related-links li {
                 list-style-type: disc;
                 padding-left: 10px;
             }
-            
+
+            .related-links li a {
+                font-size: 1.6rem;
+                font-family: $body-font;
+                line-height: 30px;
+                color: $black;
+            }
+
+            .related-links li a:hover,
+            .related-links li a:focus {
+                color: $yellow;
+            }        
         }
 
         .blog-posts {
@@ -104,10 +112,70 @@
 // MEDIA QUERIES
 // MEDIA QUERIES
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
     .blog-body {
         .blog-full {
-            color: yellow;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            
+            aside {
+                width: 100%;
+                display: flex;              
+            }
+
+            aside .bio {
+                width: 50%;
+            }
+
+            aside .related-links {
+                width: 40%;
+                // height: 120%;
+            }
+            .blog-posts {
+                 width: 100%;
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 786px) {
+    .blog-body {
+        .blog-full {
+            aside {
+                flex-direction: column;
+            }
+
+            aside .bio,
+            aside .related-links {
+                width: 80%;
+            }
+        }
+
+        .wrapper {
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .blog-body {
+        .blog-full {
+
+            .first-comment,
+            .second-comment {
+                flex-direction: column; 
+                padding: 30px;
+            }
+
+            .blog-image-small {
+                width: 35%;        
+                margin: 0 0 20px 0;
+            }
+
+            .comment-text p:nth-child(1) {
+            padding-bottom: 20px;
+            }
         }
     }
 }

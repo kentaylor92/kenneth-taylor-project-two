@@ -22,14 +22,11 @@ li {
     list-style: none;
 }
 
-
-
 // Global styles
 
 html {
     font-size: 62.5%;
 }
-
 
 p {
     font-family: $body-font;
@@ -64,6 +61,13 @@ a {
 h1 {
     color: $white;
 }
+
+img {
+    display: block;
+    width: 100%;
+}
+
+// NAV STYLING
 
 nav {
     background-color: $dark-green;
@@ -102,9 +106,40 @@ nav a:focus {
     color: $yellow;
 }
 
-img {
-    display: block;
-    width: 100%;
+// RESPONSIVE NAV STYLING
+
+label {
+    position: absolute;
+    color: white;
+    top: 8px;
+    right: 30px;
+    font-size: 4rem;
+    width: 26px;
+    display: none;
+}
+
+#toggle {
+    display: none;
+    transition: 3s ease-in;
+}
+
+
+// Skip to main content link
+
+.skip a {
+    color: black;
+    background: $green;
+    font-size: 3rem;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    transform: translateY(-50px);
+}
+ 
+.skip a:focus {
+    transform: translateY(0);
 }
 
 // GLOBAL CLASSES
@@ -141,4 +176,34 @@ img {
     nav ul li {
         display: none;
     }
+
+    label {
+        display: block;
+        cursor: pointer;
+    } 
+
+    #toggle:checked + ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+
+    #toggle:checked + ul li {
+        text-align: center;
+        display: block;
+    }
+
+    #toggle:checked + ul li:nth-of-type(3) {
+        display: none;
+    }
+
+    #toggle:checked + ul li a {
+        font-size: 4rem;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 }
+
+

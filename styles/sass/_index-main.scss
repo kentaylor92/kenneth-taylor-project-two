@@ -144,17 +144,17 @@
     }  
 }
 
-    // FOOTER
+// FOOTER
 
-    footer {
-    background-color: $black;
-      
-        small p {
-            color: $white;
-            text-align: center;
-            padding: 5px 0;
-        }
+footer {
+background-color: $black;
+    
+    small p {
+        color: $white;
+        text-align: center;
+        padding: 5px 0;
     }
+}
 
 
 // MEDIA QUERIES
@@ -260,7 +260,6 @@
         }
         .gallery ul {
             flex-direction: column;
-            // margin: 20px 0;
         }
 
         .gallery li:nth-last-of-type(2) {

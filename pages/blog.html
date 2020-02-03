@@ -12,7 +12,12 @@
 <body class="blog-body">
 
     <header>
+        <div id="skip" class="skip">
+            <a href="#main-content">Skip to main content</a>
+        </div>
         <nav>
+            <label for="toggle" aria-label="click here to toggle menu">&#9776</label>
+            <input type="checkbox" id="toggle">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
@@ -28,10 +33,10 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <div class="wrapper">
             <div class="blog-full" id="blog">
-                <aside class="aside-wrapper">
+                <aside>
                     <div class="bio">   
                         <img src="../assets/blog-image-2.jpg" alt="A close up of Willow, partially blocked by a hanging leaf.">
                         <h3>About Willow</h3>
@@ -41,10 +46,10 @@
                     <div class="related-links">
                         <h3>Recent Posts</h3>
                         <ul>
-                            <li><p>Donec facilis tortor ut</p></li>
-                            <li><p>Augue lacinia at viverra</p></li>
-                            <li><p>Semper sed sapian metus</p></li>
-                            <li><p>Scelerisque nec pharetra id</p></li>
+                            <li><a href="#">Donec facilis tortor ut</a></li>
+                            <li><a href="#">Augue lacinia at viverra</a></li>
+                            <li><a href="#">Semper sed sapian metus</a></li>
+                            <li><a href="#">Scelerisque nec pharetra id</a></li>
                         </ul>
                     </div>
                 </aside>
@@ -56,11 +61,9 @@
                         <p>Monday October 8th, 2018 by Willow</p>
                         <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh
                             lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
-        
                         <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel
                             justo. Maecenas semper suscipit nunc, sed aliquam sapien consallis eu. Nulla ut turpis in diam dapibus consequat.
-                            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu. </p>
-        
+                            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu. </p> 
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In
                             volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor
                             nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis curus. Nam
@@ -69,14 +72,11 @@
                             tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur
                             tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est
                             augue tristique risus. </p>
-        
                         <p> Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi
-                            sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. </p>
-        
+                            sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. </p>  
                         <p> In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel
                             justo. Maecenas semper susciput nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
-                            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu. </p>
-        
+                            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu. </p>    
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In
                             volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor
                             nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam
@@ -107,22 +107,20 @@
                     <form action="" class="form">
                         <!-- Make sure this is accessible via TAB -->
                         <div class="form-inputs">
-                            <label for="name" class="sr-only">Your Name</label>
+                            <label for="name" class="visually-hidden">Your Name</label>
                             <input type="text" id="name" placeholder="Name" required>
             
-                            <label for="email" class="sr-only">Enter your email</label>
+                            <label for="email" class="visually-hidden">Enter your email</label>
                             <input type="email" id="email" placeholder="Email Address" required>
                         </div>
-                        <!-- TODO: remove corner styling on textarea!!!!! -->
-                        <textarea name="user-comment" cols="80" rows="12" placeholder="Comment"></textarea>
-        
-                        <button class="primary-link">Post Comment</button>
+                        <label for="comment" class="visually-hidden">Add Comment:</label>
+                        <textarea name="user-comment" cols="80" rows="12" placeholder="Comment" id="comment"></textarea>    
+                        <button type="submit" class="primary-link">Post Comment</button>
                     </form>
                     
                 </section>  <!-- end of post section -->
             </div> <!-- end of full blog-->
-        </div>
-        
+        </div>     
     </main>  
 
     <footer>

@@ -12,7 +12,12 @@
 <body class="contact-page">
 
     <header>
+        <div id="skip" class="skip">
+            <a href="#main-content">Skip to main content</a>
+        </div>
         <nav>
+            <label for="toggle" aria-label="click here to toggle menu">&#9776</label>
+            <input type="checkbox" id="toggle">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
@@ -22,6 +27,7 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html" class="on-link">Contact</a></li>
             </ul>
+            
         </nav> <!-- end nav-->
         <div class="contact-header-text wrapper">
             <h1>Contact Me</h1>
@@ -41,7 +47,7 @@
                 </div> <!-- end social icons-->  
                 <div class="contact-info">
                     <ul>
-                        <li><p class="contact-email">info@email.com</p></li>
+                        <li><a href="mailto:" class="contact-email">info@email.com</a></li>
                         <li><p>123 - 456 - 7890</p></li>
                         <li><p>123 Queen Street West, Unit 10</p></li>
                         <li><p>Toronto, Ontario</p></li>
@@ -50,7 +56,7 @@
                 </div>          
             </aside>
 
-            <form action="" class="form">
+            <form action="" class="form" id="main-content">
                 <!-- Make sure this is accessible via TAB -->
                 <div class="form-inputs">
                     <label for="name" class="sr-only">Your Name</label>
@@ -59,10 +65,8 @@
                     <label for="email" class="sr-only">Enter your email</label>
                     <input type="email" id="email" placeholder="Email Address" required>
                 </div>
-                <!-- TODO: remove corner styling on textarea!!!!! -->
-                <textarea name="user-comment" cols="80" rows="12" placeholder="Comment"></textarea>
-            
-                <button class="primary-link">Post Comment</button>
+                <textarea name="user-comment" cols="80" rows="12" placeholder="Message"></textarea>
+                <button type="submit" class="primary-link">Post Comment</button>
             </form>
         </div>
 
@@ -71,8 +75,6 @@
                 <p>Copyright &copy; 2020 Juno</p>
             </small>
         </footer>
-
-
     </main>
     
 </body class="contact-page">
